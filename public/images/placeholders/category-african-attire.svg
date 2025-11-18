@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns African attire</title>
+  <desc id="desc">Bold geometric pattern celebrating African heritage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7CAC9" />
+      <stop offset="50%" stop-color="#FDEBD0" />
+      <stop offset="100%" stop-color="#F7B267" />
+    </linearGradient>
+    <pattern id="motif" width="200" height="200" patternUnits="userSpaceOnUse">
+      <polygon points="100,0 200,60 200,140 100,200 0,140 0,60" fill="none" stroke="#DC143C" stroke-width="12" />
+      <circle cx="100" cy="100" r="35" fill="#DC143C" opacity="0.85" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect width="1200" height="900" fill="url(#motif)" opacity="0.35" />
+  <text x="110" y="780" fill="#7a1127" font-family="'Poppins','Segoe UI',sans-serif" font-size="88" font-weight="600">African Attire</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns product preview</title>
+  <desc id="desc">Neutral gradient placeholder for product gallery items.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDEBD0" />
+      <stop offset="50%" stop-color="#F7CAC9" />
+      <stop offset="100%" stop-color="#F75270" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" rx="60" fill="url(#bg)" />
+  <path d="M140 930L360 520L520 720L640 520L760 720L640 960" fill="rgba(4,4,6,0.08)" />
+  <circle cx="450" cy="360" r="140" fill="rgba(4,4,6,0.12)" />
+  <text x="180" y="1080" fill="#401818" font-family="'Poppins','Segoe UI',sans-serif" font-size="96" font-weight="600">EllDesigns</text>
+</svg>

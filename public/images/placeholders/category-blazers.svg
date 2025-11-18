@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns blazers</title>
+  <desc id="desc">Vibrant blazer outline placeholder artwork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F75270" />
+      <stop offset="100%" stop-color="#DC143C" />
+    </linearGradient>
+    <linearGradient id="outline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FDEBD0" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <g opacity="0.3" fill="rgba(255,255,255,0.25)">
+    <circle cx="300" cy="280" r="160" />
+    <circle cx="880" cy="620" r="220" />
+  </g>
+  <g transform="translate(360 160)" fill="none" stroke="url(#outline)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M240 0L20 220L120 600H360L460 220L240 0Z" />
+    <path d="M240 20L200 260L280 260Z" />
+    <path d="M160 420H320" />
+  </g>
+  <text x="130" y="780" fill="#FDEBD0" font-family="'Poppins','Segoe UI',sans-serif" font-size="90" font-weight="600">Blazers</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns tracksuits</title>
+  <desc id="desc">Energetic gradient placeholder for athleisure collections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040406" />
+      <stop offset="100%" stop-color="#131a2b" />
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F75270" />
+      <stop offset="50%" stop-color="#F7CAC9" />
+      <stop offset="100%" stop-color="#FDEBD0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <g opacity="0.3" stroke="#F75270" stroke-width="20" fill="none">
+    <path d="M120 520C260 420 420 420 560 520C700 620 860 620 1000 520" />
+    <path d="M120 640C260 540 420 540 560 640C700 740 860 740 1000 640" />
+  </g>
+  <rect x="180" y="280" width="840" height="280" rx="140" fill="url(#pulse)" opacity="0.75" />
+  <circle cx="360" cy="680" r="90" fill="rgba(247,82,112,0.55)" />
+  <circle cx="840" cy="220" r="110" fill="rgba(247,202,201,0.45)" />
+  <text x="150" y="780" fill="#FDEBD0" font-family="'Poppins','Segoe UI',sans-serif" font-size="92" font-weight="600">Tracksuits</text>
+</svg>

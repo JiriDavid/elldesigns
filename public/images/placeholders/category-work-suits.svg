@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns work suits</title>
+  <desc id="desc">Minimalist tailored suit silhouette placeholder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040406" />
+      <stop offset="100%" stop-color="#1f1b24" />
+    </linearGradient>
+    <linearGradient id="lapel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7CAC9" />
+      <stop offset="100%" stop-color="#FDEBD0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <g opacity="0.18" stroke="#F75270" stroke-width="12">
+    <path d="M0 200H1200M0 360H1200M0 520H1200" />
+  </g>
+  <g transform="translate(360 160)">
+    <path d="M240 0L0 260L80 620H400L480 260L240 0Z" fill="rgba(255,255,255,0.05)" />
+    <path d="M140 140L240 380L340 140L240 70L140 140Z" fill="url(#lapel)" />
+    <circle cx="240" cy="430" r="20" fill="#F7CAC9" />
+    <rect x="180" y="450" width="120" height="150" rx="30" fill="#FDEBD0" opacity="0.12" />
+  </g>
+  <text x="120" y="770" fill="#FDEBD0" font-family="'Poppins','Segoe UI',sans-serif" font-size="92" font-weight="600">Work Suits</text>
+</svg>

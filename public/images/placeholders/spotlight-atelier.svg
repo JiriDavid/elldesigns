@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns atelier ambiance</title>
+  <desc id="desc">Gradient background with geometric accents used as a placeholder for atelier photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC143C" />
+      <stop offset="45%" stop-color="#F75270" />
+      <stop offset="85%" stop-color="#F7CAC9" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.6)" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <g opacity="0.55">
+    <circle cx="360" cy="220" r="180" fill="rgba(255,255,255,0.15)" />
+    <circle cx="1280" cy="720" r="260" fill="rgba(255,255,255,0.12)" />
+    <path d="M200 860L480 420L840 820Z" fill="rgba(4,4,6,0.25)" />
+    <path d="M1120 100L1450 500L980 560Z" fill="rgba(4,4,6,0.3)" />
+  </g>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#glow)" opacity="0.35" />
+  <text x="120" y="760" fill="rgba(4,4,6,0.75)" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="120" font-weight="600">Atelier</text>
+  <text x="120" y="840" fill="rgba(4,4,6,0.6)" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="60">Made-to-measure tailoring</text>
+</svg>

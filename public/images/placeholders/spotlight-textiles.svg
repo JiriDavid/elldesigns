@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">EllDesigns textile curation</title>
+  <desc id="desc">Abstract woven pattern placeholder celebrating rich textile palettes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDEBD0" />
+      <stop offset="50%" stop-color="#F7CAC9" />
+      <stop offset="100%" stop-color="#DC143C" />
+    </linearGradient>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse" patternTransform="rotate(12)">
+      <rect width="120" height="120" fill="none" stroke="rgba(4,4,6,0.08)" stroke-width="4" />
+      <path d="M0 60H120M60 0V120" stroke="rgba(4,4,6,0.08)" stroke-width="4" />
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <rect width="1600" height="900" fill="url(#grid)" opacity="0.35" />
+  <g fill="rgba(4,4,6,0.12)">
+    <circle cx="240" cy="720" r="180" />
+    <circle cx="1260" cy="240" r="220" />
+    <circle cx="900" cy="660" r="140" />
+  </g>
+  <text x="140" y="760" fill="rgba(4,4,6,0.78)" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="110" font-weight="600">Textiles</text>
+  <text x="140" y="840" fill="rgba(4,4,6,0.6)" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="60">Curated African fabrics</text>
+</svg>
