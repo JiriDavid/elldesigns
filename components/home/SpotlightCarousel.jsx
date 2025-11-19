@@ -73,7 +73,7 @@ export default function SpotlightCarousel() {
             })}
           </div>
         </div>
-  <div className="relative h-64 overflow-hidden rounded-3xl border border-rose-100 sm:h-[420px]">
+        <div className="relative h-64 overflow-hidden rounded-3xl border border-rose-100 sm:h-[420px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={active.id}

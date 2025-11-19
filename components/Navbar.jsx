@@ -36,8 +36,8 @@ export default function Navbar() {
         ? "border-brandCrimson/30 bg-rose-50 text-brandCrimson"
         : "text-brandCrimson"
       : variant === "mobile"
-        ? "border-transparent text-slate-600 hover:bg-rose-50"
-        : "text-slate-500 hover:text-slate-900";
+      ? "border-transparent text-slate-600 hover:bg-rose-50"
+      : "text-slate-500 hover:text-slate-900";
 
     return (
       <Link
