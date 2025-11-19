@@ -35,9 +35,9 @@ export default function SpotlightCarousel() {
   const [active, setActive] = useState(spotlightItems[0]);
 
   return (
-    <section className="mx-auto max-w-6xl px-6">
-      <div className="grid gap-10 rounded-3xl border border-rose-100 bg-white p-10 shadow-xl shadow-rose-100/40 lg:grid-cols-[1fr,1.1fr]">
-        <div className="space-y-6">
+    <section className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="grid gap-8 rounded-3xl border border-rose-100 bg-white p-6 shadow-xl shadow-rose-100/40 sm:p-8 lg:grid-cols-[1fr,1.1fr]">
+        <div className="space-y-6 text-center lg:text-left">
           <span className="text-xs uppercase tracking-[0.4em] text-brandCrimson font-bold">
             Spotlight
           </span>
@@ -56,7 +56,7 @@ export default function SpotlightCarousel() {
                   key={item.id}
                   type="button"
                   onClick={() => setActive(item)}
-                  className={`rounded-3xl border px-6 py-4 text-left transition ${
+                  className={`rounded-3xl border px-5 py-4 text-left transition ${
                     isActive
                       ? "border-brandCrimson/40 bg-rose-50"
                       : "border-rose-100 bg-white hover:border-brandPink/60"
@@ -73,7 +73,7 @@ export default function SpotlightCarousel() {
             })}
           </div>
         </div>
-        <div className="relative h-[420px] overflow-hidden rounded-3xl border border-rose-100">
+  <div className="relative h-64 overflow-hidden rounded-3xl border border-rose-100 sm:h-[420px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={active.id}

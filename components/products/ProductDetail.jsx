@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import { SignedIn, SignedOut, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FaHeart, FaWhatsapp } from "react-icons/fa";
 
 const initialOrderState = {
@@ -122,9 +121,9 @@ export default function ProductDetail({ product, initialComments }) {
   };
 
   return (
-    <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-24 pt-10 lg:grid-cols-[1.2fr,0.8fr]">
+    <div className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 pt-24 sm:gap-12 sm:px-6 lg:grid-cols-[1.2fr,0.8fr]">
       <div className="space-y-6">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-rose-100 shadow-lg">
+        <div className="relative aspect-[4/3] min-h-[280px] overflow-hidden rounded-3xl border border-rose-100 shadow-lg sm:min-h-[360px]">
           <Image
             src={media[selectedMedia]}
             alt={product.name}
@@ -134,13 +133,14 @@ export default function ProductDetail({ product, initialComments }) {
             sizes="(max-width: 1024px) 100vw, 60vw"
           />
         </div>
-        <div className="flex gap-4 overflow-x-auto pb-2">
+
+        <div className="flex gap-3 overflow-x-auto pb-2">
           {media.map((url, index) => (
             <button
               key={url}
               type="button"
               onClick={() => setSelectedMedia(index)}
-              className={`relative h-24 w-24 overflow-hidden rounded-2xl border transition ${
+              className={`relative h-20 w-20 overflow-hidden rounded-2xl border transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-brandPink sm:h-24 sm:w-24 ${
                 selectedMedia === index
                   ? "border-brandCrimson"
                   : "border-rose-100 hover:border-brandPink/60"
@@ -156,7 +156,8 @@ export default function ProductDetail({ product, initialComments }) {
             </button>
           ))}
         </div>
-        <div className="rounded-3xl border border-rose-100 bg-white/95 p-8 shadow-lg">
+
+        <div className="rounded-3xl border border-rose-100 bg-white/95 p-6 shadow-lg sm:p-8">
           <h2 className="text-xl font-semibold text-brandCrimson">
             Why clients love this piece
           </h2>
@@ -190,11 +191,11 @@ export default function ProductDetail({ product, initialComments }) {
         </div>
       </div>
 
-      <div className="space-y-10">
-        <div className="rounded-3xl border border-rose-100 bg-white/95 p-8 shadow-lg">
-          <div className="flex items-start justify-between gap-4">
+      <div className="space-y-8">
+        <div className="rounded-3xl border border-rose-100 bg-white/95 p-6 shadow-lg sm:p-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h1 className="text-3xl font-semibold text-[#1f151d]">
+              <h1 className="text-2xl font-semibold text-[#1f151d] sm:text-3xl">
                 {product.name}
               </h1>
               <p className="mt-2 text-sm uppercase tracking-[0.4em] text-slate-500">
@@ -206,9 +207,9 @@ export default function ProductDetail({ product, initialComments }) {
                 type="button"
                 onClick={handleWishlist}
                 disabled={wishlistLoading}
-                className="flex items-center gap-2 rounded-full border border-rose-100 px-4 py-2 text-sm font-semibold text-brandCrimson transition hover:border-brandPink/60"
+                className="inline-flex items-center gap-2 rounded-full border border-rose-100 px-4 py-2 text-sm font-semibold text-brandCrimson transition hover:border-brandPink/60"
               >
-                <FaHeart className="text-brandSoftPink" />{" "}
+                <FaHeart className="text-brandSoftPink" />
                 {wishlistLoading ? "Adding…" : "Wishlist"}
               </button>
             </SignedIn>
@@ -224,13 +225,13 @@ export default function ProductDetail({ product, initialComments }) {
             )}.`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-brandCrimson px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-neon transition hover:bg-brandPink"
+            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brandCrimson px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-neon transition hover:bg-brandPink sm:w-auto"
           >
             <FaWhatsapp /> WhatsApp Atelier
           </a>
         </div>
 
-        <div className="rounded-3xl border border-rose-100 bg-white/95 p-8 shadow-lg">
+        <div className="rounded-3xl border border-rose-100 bg-white/95 p-6 shadow-lg sm:p-8">
           <h3 className="text-lg font-semibold text-brandCrimson">
             Request a bespoke order
           </h3>
@@ -322,8 +323,8 @@ export default function ProductDetail({ product, initialComments }) {
           </form>
         </div>
 
-        <div className="rounded-3xl border border-rose-100 bg-white/95 p-8 shadow-lg">
-          <div className="flex items-center justify-between">
+        <div className="rounded-3xl border border-rose-100 bg-white/95 p-6 shadow-lg sm:p-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <h3 className="text-lg font-semibold text-brandCrimson">
               Community impressions
             </h3>
@@ -358,7 +359,7 @@ export default function ProductDetail({ product, initialComments }) {
             </form>
           </SignedIn>
 
-          <ul className="mt-6 space-y-6 text-sm text-slate-600">
+          <ul className="mt-6 space-y-4 text-sm text-slate-600">
             {comments.map((comment) => (
               <li
                 key={comment._id}
